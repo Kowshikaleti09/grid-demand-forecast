@@ -29,6 +29,14 @@ pip install -r requirements.txt
 cp .env.example .env  # then fill in EIA_API_KEY
 ```
 
+## Data sources
+
+- **Demand:** hourly electricity demand (type `"D"`) from the EIA Open Data
+  API v2 `electricity/rto/region-data` endpoint.
+- **Respondent code alias:** EIA labels the California ISO (commonly **CAISO**)
+  with the respondent code **`CISO`**. Demand for CAISO is therefore ingested
+  and partitioned under `balancing_authority=CISO`.
+
 ## Status
 
 Scaffold only — no business logic implemented yet.
