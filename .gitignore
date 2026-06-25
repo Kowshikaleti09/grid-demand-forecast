@@ -1,0 +1,27 @@
+# Local data — never commit raw or processed datasets.
+data/
+
+# Secrets
+.env
+
+# Virtual environments
+venv/
+.venv/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build / distribution artifacts
+build/
+dist/
+*.egg-info/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
